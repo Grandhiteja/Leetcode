@@ -12,8 +12,8 @@ class Solution {
                 int cnt = 1;
                 int x = it;
                 while(st.contains(x + 1)){
-                    x = x + 1;
-                    cnt = cnt +  1;
+                    x ++;
+                    cnt  +=  1;
 
                 }
                 longest = Math.max(longest,cnt);
