@@ -1,12 +1,12 @@
 class Solution {
-    public int findPeakElement(int[] nums) {// for searching in l;eft side 
+    public int findPeakElement(int[] nums) {// for searching in right side;
         int left = 0,right = nums.length-1;
         while(left < right){
-            int mid = left + (right - left)/2;
-            if(nums[mid] > nums[mid+1]){
-                right = mid;
+            int mid = left + (right - left + 1)/2;
+            if(nums[mid] > nums[mid-1]){
+                left = mid;
             }else{
-                left = mid + 1;
+                right  = mid -1;
             }
 
 
