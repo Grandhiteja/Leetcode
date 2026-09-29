@@ -1,5 +1,5 @@
 class Solution {
-    public int findPeakElement(int[] nums) {
+    public int findPeakElement(int[] nums) {// for searching in l;eft side 
         int left = 0,right = nums.length-1;
         while(left < right){
             int mid = left + (right - left)/2;
